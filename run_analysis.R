@@ -47,4 +47,4 @@ ds <- rbind(data_train, data_test)
 # Grouping and avergagind the data
 result <- ds %>% group_by(subject, activity) %>% summarize_each(funs(mean), 2:length(col_names))
 # Writing output to csv
-write.csv(result, "processed_data.csv", row.names = FALSE)
+write.table(result, "processed_data.txt", row.names = FALSE)

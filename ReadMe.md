@@ -23,7 +23,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 * __activity_labels.txt__  Names of the activities, e.g. "walking", "laying" with their numeric codes
 * __features.txt__         Feature names for X_test and X_train
-* __processed_data.csv__   The output of the R script        
+* __processed_data.txt__   The output of the R script        
 * __ReadMe.md__            This file
 * __run_analysis.R__       The main script. Process the data and forms processed_data.csv
 * __subject_test.txt__     Table with subject numbers for test data
