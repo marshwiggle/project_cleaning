@@ -1,3 +1,4 @@
+library(plyr)
 
 # Get activities names
 activity_labels <- read.table("activity_labels.txt")
@@ -6,11 +7,11 @@ activity_labels <- read.table("activity_labels.txt")
 #We want represent them as ordinary english words like "walking" or "laying"
 #First for the training set
 activities_train_raw <- read.table("y_train.txt")
-activities_train <- merge(activities_train_raw, activity_labels)$V2
+activities_train <- join(activities_train_raw, activity_labels)$V2
 
 #... and then for the test set
 activities_test_raw <- read.table("y_test.txt")
-activities_test <- merge(activities_test_raw, activity_labels)$V2
+activities_test <- join(activities_test_raw, activity_labels)$V2
 
 # Now, let's read info about the subject for each measurement
 subject_train <- read.table("subject_train.txt")
